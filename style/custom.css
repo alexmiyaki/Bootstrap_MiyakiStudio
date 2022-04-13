@@ -42,3 +42,11 @@ ul {
     margin-top: 24px;
     font-size: 18px;
 }
+
+@media screen and (max-width: 525px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
