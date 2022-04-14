@@ -37,3 +37,20 @@ ul {
     margin-top: 24px;
     font-size: 18px;
 }
+
+@media screen and (max-width: 497px) {
+    form div h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    form div h2 {
+        font-size: 15px;
+    }
+
+    .col-form-label {
+        font-size: 12px;
+    }
+
+}
