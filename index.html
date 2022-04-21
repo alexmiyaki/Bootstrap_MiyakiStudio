@@ -105,25 +105,34 @@
     </section>
     <hr>
     <section id="orcamento" class="container d-flex justify-content-center">
-        <form class="w-75 needs-validation" id="form-orc">
+        <form class="w-75 needs-validation" id="form-orc" novalidate>
             <div class="col-12">
                 <h2>Solicite seu orçamento abaixo</h2>
             </div>
             <div class="form-group p-2">
               <label for="name" class="col-form-label">Nome:</label>
-              <input type="text" class="form-control" id="name" required>
+              <input type="text" class="form-control" id="name" placeholder="Digite seu nome..." required>
+              <div class="invalid-feedback">
+                  Por favor, insira o seu nome.
+              </div>
             </div>
             <div class="form-group p-2">
               <label for="email" class="col-form-label">E-mail:</label>
-              <input type="email" class="form-control" id="email" required>
+              <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com.br" required>
+              <div class="invalid-feedback">
+                  E-mail incorreto, por favor verifique este campo.
+              </div>
             </div>
             <div class="form-group p-2">
               <label for="telefone" class="col-form-label">Telefone</label>
-              <input type="text" class="form-control" id="telefone" pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required>
+              <input type="text" class="form-control" id="telefone" placeholder="(99) 9999-9999" pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required>
+              <div class="invalid-feedback">
+                  Por favor, digite o telefone no formato (99) 9999-9999.
+              </div>
             </div>
             <div class="form-group p-2">
               <label for="servicetype" class="col-form-label">Qual serviço deseja realizar?</label>
-                <select class="form-select" aria-label="Default select example" required>
+                <select class="form-select" aria-label="Default select example">
                     <option selected>Escolha o serviço</option>
                         <option value="1">Identidade Visual</option>
                         <option value="2">Web Design</option>
